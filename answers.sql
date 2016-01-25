@@ -175,3 +175,20 @@ with the letter 'M'.
 SELECT email, first_name, last_name FROM salespeople
 WHERE last_name LIKE 'M%' AND
 region IN ('Northwest', 'Southwest');
+
+
+==========
+13
+
+-----
+
+Write a query that shows the melon type, common name, price, and the
+price of the melon given in euros. The 'melons' table has prices in dollars,
+and the dollar to euro conversion rate is 0.73.
+
+
+-----
+
+
+SELECT melon_type, common_name, price, (price*.73) as euro_price FROM 
+melons;
